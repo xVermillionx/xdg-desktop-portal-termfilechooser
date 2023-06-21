@@ -55,7 +55,6 @@ static int exec_filechooser(void *data, bool writing, bool multiple, bool direct
         if (cr == '\n') {
             num_lines++;
         }
-        cr = getc(fp);
         if (ferror(fp)) {
             return 1;
         }
